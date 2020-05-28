@@ -6,7 +6,7 @@
   "author": "Victor Godwin <conquerorsword36@yahoo.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=production babel-node ./src/index.js",
+    "start": "babel-node ./src/index.js",
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node ./src/index.js",
     "db-migrate": "cross-env NODE_ENV=development npx sequelize db:migrate",
     "db-undo-migration": "npx sequelize db:migrate:undo:all",
